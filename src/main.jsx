@@ -6,7 +6,7 @@ import App from './App.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />
-    <div id='div1'><img src="./src/assets/images/image-equilibrium.jpg" alt="" /></div>
+    <div id='div1'><img id='icone' src="./src/assets/images/image-equilibrium.jpg" alt="" /></div>
     <div id='div2'>
       <p id='div2txt'>Equilibrium #3429 </p>
       <p id='div2txt2'>Our Equilibrium collection promotes balance and calm</p>

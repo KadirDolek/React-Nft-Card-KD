@@ -28,6 +28,7 @@ body{
   width: auto;
   display: flex;
   justify-content: center;
+  position: relative;
 }
 #div1 img{
   height: 300px;
@@ -60,6 +61,10 @@ body{
   margin-bottom: 5px;
   color: white;
 }
+#div2txt:hover{
+  cursor: pointer;
+  color: rgb(15, 223, 221);
+}
 #div2txt3{
   display: flex;
   justify-content: space-between;
@@ -91,4 +96,40 @@ body{
   color: white;
   font-weight: 100;
   opacity: 80%;
+}
+#txtavatar b:hover{
+  color: rgb(15, 223, 221);
+  cursor: pointer;
+}
+
+#icone {
+  position: relative;
+  z-index: 1;
+  display: block;
+}
+
+#div1::after {
+  content: "";
+  position: absolute;
+  top: 7.5%; 
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  height: 303px;
+  width: 86%;
+  background-color: rgba(0, 255, 248, 0.5);
+  border-radius: 3.5%;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./assets/images/icon-view.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 2;
+}
+#div1:hover::after {
+  opacity: 1;
 }
